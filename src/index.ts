@@ -57,7 +57,7 @@ async function initBrowser() {
             headless: false,
             turnstile: true,
             connectOption: { defaultViewport: null },
-            disableXvfb: false,
+            disableXvfb: true,
         });
 
         browser = connectedBrowser;
