@@ -42,4 +42,4 @@ EXPOSE 7860
 
 # 8. Start the app using xvfb-run to provide a virtual display
 # This allows your code's 'headless: false' setting to work on a server
-CMD ["bun", "run", "start"]
+CMD ["xvfb-run", "--server-args=-screen 0 1280x1024x24", "bun", "start"]
